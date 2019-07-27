@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar color ="primary
+  
+    ">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+   KAQCHIKEL
+      </ion-title>
+    </ion-toolbar>
+  </ion-header> 
+  
+<ion-content fullscreen>
+
+  
+
+        <ion-grid>
+
+            <ion-row>
+                <ion-col>
+      <ion-item>
+        <ion-card class="welcome-card" >
+            <ion-card-header>
+                <ion-img src="assets/img/curso.ico"></ion-img>
+              <ion-card-title>curso1</ion-card-title>
+            </ion-card-header>
+           
+            <ion-button expand="block" routerLink="/kaquno">Comenzar</ion-button>
+          </ion-card>   
+        <ion-card class="welcome-card"  >
+            <ion-card-header>
+                <ion-img src="assets/img/curso.ico"></ion-img>
+              <ion-card-title>curso2</ion-card-title>
+            </ion-card-header>
+            <ion-button expand="block" routerLink="/home">Comenzar</ion-button>
+          </ion-card>
+        </ion-item>
+    </ion-col>
+      </ion-row>
+        </ion-grid>
+
+</ion-content>
+
+<ion-content>
+    <ion-tabs>
+        <ion-tab-bar  slot="bottom">
+            <ion-tab-button routerLink="/kaqchikel">
+              <ion-icon name="bookmarks"></ion-icon>
+              <ion-label>vocabulario</ion-label>
+              <ion-badge>6</ion-badge>
+            </ion-tab-button>
+        
+            <ion-tab-button routerLink="/progreso">
+              <ion-icon name="happy"></ion-icon>
+              <ion-label>Progreso</ion-label>
+            </ion-tab-button>
+      
+        
+            <ion-tab-button  routerLink="/tienda">
+              <ion-icon name="pricetags"></ion-icon>
+              <ion-label>Tienda</ion-label>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+  
+
+</ion-content>

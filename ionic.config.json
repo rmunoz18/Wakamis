@@ -1,0 +1,7 @@
+{
+  "name": "Wakamis",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

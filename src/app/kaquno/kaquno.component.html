@@ -38,7 +38,7 @@
               <ion-img src="assets/img/mujer.ico"></ion-img>
               <ion-card-header>
               </ion-card-header>
-              <ion-button shape="round" routerLink="/kaquno">Ixöq</ion-button>     
+              <ion-button shape="round" (click)="truthClick1()"  [disabled]="disableButton">Ixöq</ion-button>     
             </ion-card>
         </ion-item>
       </ion-col>
@@ -66,5 +66,5 @@
         </ion-row>
           </ion-grid>
          
-<ion-button type="submit" expand="block"  (click) ="ventana1()" >Siguiente</ion-button>
+<ion-button type="submit" expand="block"  (click) ="valuno1()" >Siguiente</ion-button>
 </ion-content>

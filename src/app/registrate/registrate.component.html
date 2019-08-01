@@ -1,0 +1,44 @@
+
+<ion-header>
+  <ion-toolbar color ="primary
+
+  ">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Registrate
+    </ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content fullscreen>
+  <form #registroForm="ngForm" (ngSubmit)="registrar()">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label  for ="nombre" position="stacked">Nombre: <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" name="nombre" #nombre="ngModel" [(ngModel)]="user.nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label  for="apellido" position="stacked">Apellido:<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" name="apellido" #apellido="ngModel"[(ngModel)]="user.apellido"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label  for="email"position="stacked">Email<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" name="email" #email="ngModel" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label  for="password"position="stacked">Password<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text"  name="password"  #email="ngModel"[(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Crear  Cuenta</ion-button>
+    </div>
+  </form>
+</ion-content>
+

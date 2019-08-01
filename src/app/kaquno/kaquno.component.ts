@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NavParams,NavController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
-import { and } from '@angular/router/src/utils/collection';
+
 @Component({
   selector: 'app-kaquno',
   templateUrl: 'kaquno.component.html',
@@ -10,6 +10,8 @@ import { and } from '@angular/router/src/utils/collection';
 })
 export class KaqunoComponent implements OnInit {
 
+  public valor1;
+  public valor2;
   private selectedItem: any;
   private icons = [
     'flask',
@@ -37,9 +39,22 @@ export class KaqunoComponent implements OnInit {
 
 
   async ventana1(){
+    this.valor1 ="AK'AL";
     const toast = await  this.toastController.create({
-      message : "puto",
-      duration : 2000,
+      message : "Error, la palabra correcta es: AK'AL" ,
+      duration : 9000,
+        showCloseButton: true,
+        closeButtonText: 'Continuar',
+    });
+    toast.present();
+  }
+
+  
+  async ventana2(){
+
+    const toast = await  this.toastController.create({
+      message : "Correcto" ,
+      duration : 9000,
         showCloseButton: true,
         closeButtonText: 'Continuar',
     });
@@ -47,12 +62,33 @@ export class KaqunoComponent implements OnInit {
   }
 
 
-
-  
 disableButton;
 
 async truthClick() {
 this.disableButton = true;
+}
+
+async truthClick1() {
+  this.disableButton = true;
+  }
+  
+
+
+
+valuno1(){
+  this.valor1
+
+  if(!this.valor1){
+     
+    this.ventana2()
+  
+
+  }else{
+
+    this.ventana1()
+
+  }
+
 }
 ngOnInit() {}
 

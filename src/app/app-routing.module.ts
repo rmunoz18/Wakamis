@@ -46,6 +46,15 @@ const routes: Routes = [
     path: 'tienda',
     loadChildren: './tienda/tienda.module#TiendaComponentModule'
 
+  },
+
+  {
+    path: 'login',
+    loadChildren: './login/login.module#LoginComponentModule'
+  },
+  {
+    path: 'registrate',
+    loadChildren: './registrate/registrate.module#RegistrateComponentModule'
   }
 ];
 

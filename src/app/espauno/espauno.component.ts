@@ -4,11 +4,12 @@ import { ToastController } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-kaquno',
-  templateUrl: 'kaquno.component.html',
-  styleUrls: ['kaquno.component.scss'],
+  selector: 'app-espauno',
+  templateUrl: './espauno.component.html',
+  styleUrls: ['./espauno.component.scss'],
 })
-export class KaqunoComponent implements OnInit {
+export class EspaunoComponent implements OnInit {
+
 
   public valor1;
   public valor2;
@@ -92,9 +93,8 @@ valuno1(){
   }
 
 }
-ngOnInit() {}
 
-  
+
+  ngOnInit() {}
 
 }
-

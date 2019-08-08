@@ -38,6 +38,11 @@ export class ListPage implements OnInit {
     this.navCtrl.navigateForward("kaqchikel");
    }
 
+   abrirespanol(){
+    this.navCtrl.navigateForward("espanol");
+   }
+
+
   ngOnInit() {
   }
   // add back when alpha.4 is out

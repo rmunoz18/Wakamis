@@ -31,6 +31,11 @@ const routes: Routes = [
   },
   
   {
+    path: 'espauno',
+    
+    loadChildren: './espauno/espauno.module#EspaunoComponentModule'
+  },
+  {
     path: 'calendario',
   
       loadChildren: './calendario/calendario.module#CalendarioComponentModule'

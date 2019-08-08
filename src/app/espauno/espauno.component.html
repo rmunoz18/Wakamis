@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color ="primary ">
+
+ 
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Curso 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content fullscreen>
+
+        <ion-item>
+          <ion-icon slot="top" ></ion-icon>
+       
+        <ion-progress-bar color="secondary" value="0.50"></ion-progress-bar>
+      </ion-item>
+      
+
+      <ion-item>
+          <ion-label color ="dark" >¿Ap'iste uk t'zi'?</ion-label>
+        </ion-item>
+        <ion-grid>
+
+            <ion-row>
+                <ion-col>
+        <ion-item>
+        <ion-card class="welcome-card">
+            <ion-img src="assets/img/perro.ico"></ion-img>
+            <ion-card-header>
+            </ion-card-header>
+            <ion-button   shape="round" (click)="truthClick()"  [disabled]="disableButton" >t'zi</ion-button>       
+          </ion-card>
+          <ion-card class="welcome-card">
+              <ion-img src="assets/img/mujer.ico"></ion-img>
+              <ion-card-header>
+              </ion-card-header>
+              <ion-button shape="round" (click)="truthClick1()"  [disabled]="disableButton">Ixöq</ion-button>     
+            </ion-card>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          
+            <ion-card class="welcome-card">
+                <ion-img src="assets/img/mono.ico"></ion-img>
+                <ion-card-header>
+                  
+                </ion-card-header> 
+                <ion-button shape="round" routerLink="/kaquno">c'oy</ion-button>        
+              </ion-card>  
+              
+              
+              <ion-card class="welcome-card1">
+                  <ion-img src="assets/img/hombre.ico"></ion-img>
+                  <ion-card-header>
+                  </ion-card-header>         
+                  <ion-button  shape="round"  routerLink="/kaquno"  >Achi</ion-button>     
+                </ion-card> 
+            </ion-item>
+          </ion-col>
+        </ion-row>
+          </ion-grid>
+         
+<ion-button type="submit" expand="block"  (click) ="valuno1()" >Siguiente</ion-button>
+</ion-content>
